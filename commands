@@ -1,0 +1,5 @@
+src/driver/dtiger --dump-ast test.tig
+echo "a * b + c * d" | src/driver/dtiger --dump-ast -
+echo "1+2" | src/driver/dtiger --trace-lexer --trace-parser --dump-ast -
+echo "2*3" | src/driver/dtiger --e -
+echo "2*3" | src/driver/dtiger --dump-ast --e -
